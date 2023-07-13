@@ -18,7 +18,7 @@
 <PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
 <Article>
 	<div class="head">
-		<ArticleImage src={data.frontmatter.cover} />
+		<ArticleImage src={data.frontmatter.cover.replaceAll("./", "../")} />
 		<ArticleTitle title={data.frontmatter.title} />
 		<ArticleMeta author={data.author} date={data.frontmatter.date} />
 	</div>
