@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Continuum Design System: A Modern and Modular UI Framework for Web Development'
 description: 'Continuum Design System is a design system for building web applications. It is a collection of reusable components, guided by clear standards, that can be assembled together to build a number of applications.'
-author: 'rajaniraiyn'
+author: 'teejaswan'
 date: '2023-07-14'
 published: true
 cover: './covers/launching-continuum-design-system.jpg'
