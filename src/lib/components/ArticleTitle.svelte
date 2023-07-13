@@ -7,7 +7,7 @@
 		.replace(/[^a-zA-Z ]/g, '')
 		.replace(/\s/g, '-');
 
-	const href = slug ? `/posts/${slug}` : '#' + id;
+	const href = slug ? `./posts/${slug}` : '#' + id;
 </script>
 
 {#if slug}

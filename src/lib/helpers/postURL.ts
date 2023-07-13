@@ -4,7 +4,7 @@ export function getPostURL(slug: string, title: string) {
         .replace(/[^a-zA-Z ]/g, '')
         .replace(/\s/g, '-');
 
-    const href = slug ? `/posts/${slug}` : '#' + id;
+    const href = slug ? `./posts/${slug}` : '#' + id;
 
     return href;
 }

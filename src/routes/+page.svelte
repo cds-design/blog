@@ -7,7 +7,7 @@
 	import ArticleMeta from '$lib/components/ArticleMeta.svelte';
 	import ArticleDescription from '$lib/components/ArticleDescription.svelte';
 
-	import { getPostURL, getAuthor } from '$lib/helpers';
+	import { getPostURL, getAuthor, getCoverImageURL } from '$lib/helpers';
 
 	export let data: PageData;
 </script>
@@ -24,6 +24,8 @@
 				<p>loading...</p>
 			{:then author}
 			<ArticleMeta {author} {date} />
+			{:catch e}
+				<span>{author}</span>
 			{/await}
 			<ArticleDescription {description} {slug} />
 		</div>

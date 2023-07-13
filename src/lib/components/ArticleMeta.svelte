@@ -1,15 +1,18 @@
 <script lang="ts">
+	import load from "cds-design"
 	import type {Author} from "$lib/helpers"
 	export let author: Author;
 	export let date: string;
 
 	const formattedDate = new Date(date).toDateString();
+
+	load("avatar")
 </script>
 
 <p>
 	<a href={author.href} class="author" title={author.tooltip}>
 			<!-- <img src={author.pic} alt={author.name}> -->
-			<cds-avatar src={author.pic}></cds-avatar>
+			<cds-avatar src={author.pic} active></cds-avatar>
 			<span class="author-name">
 				{author.name}
 			</span>
