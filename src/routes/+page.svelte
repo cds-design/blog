@@ -7,7 +7,7 @@
 	import ArticleMeta from '$lib/components/ArticleMeta.svelte';
 	import ArticleDescription from '$lib/components/ArticleDescription.svelte';
 
-	import { getPostURL, getAuthor, getCoverImageURL } from '$lib/helpers';
+	import { getPostURL, getAuthor } from '$lib/helpers';
 
 	export let data: PageData;
 </script>

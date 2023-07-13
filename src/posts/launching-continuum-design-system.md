@@ -4,7 +4,7 @@ description: 'Continuum Design System is a design system for building web applic
 author: 'rajaniraiyn'
 date: '2023-07-14'
 published: true
-cover: '/covers/launching-continuum-design-system.jpg'
+cover: './covers/launching-continuum-design-system.jpg'
 ---
 
 Are you looking for a design system that can help you create beautiful, consistent, and accessible web applications? Do you want to use a framework that is based on web standards, modular components, and open source principles? If yes, then you should check out Continuum Design System (CDS), a new and innovative UI framework for web development.

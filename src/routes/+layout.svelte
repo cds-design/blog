@@ -5,7 +5,7 @@
 	import "$lib/styles/global.css";
 </script>
 
-{#if $page.url.pathname === '/'}
+{#if !$page.url.href.includes("/posts/")}
 	<Header/>
 {/if}
 
