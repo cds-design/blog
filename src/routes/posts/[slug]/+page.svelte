@@ -15,7 +15,7 @@
 	$: component = data.component as unknown as C;
 </script>
 
-<PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
+<PageHead title={data.frontmatter.title} description={data.frontmatter.description} cover_image={data.frontmatter.cover.replaceAll("./", "../")}/>
 <Article>
 	<div class="head">
 		<ArticleImage src={data.frontmatter.cover.replaceAll("./", "../")} />
