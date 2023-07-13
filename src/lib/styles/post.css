@@ -1,0 +1,33 @@
+a {
+    text-decoration: underline;
+}
+
+:where(h1, h2, h3, h4, h5, h6) a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+:where(h1, h2, h3, h4, h5, h6) a::after {
+    content: "#";
+    margin-inline-start: 0.5em;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+:where(h1, h2, h3, h4, h5, h6) a:where(:hover, :focus)::after {
+    opacity: 0.75;
+}
+
+strong {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05ch;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05ch;
+    margin-block: 1.5em 0.05em;
+}

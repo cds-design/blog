@@ -1,0 +1,42 @@
+:root {
+    --light-color: rgb(30, 30, 30);
+    --dark-color: rgb(220, 220, 220);
+
+    --light-bg-color: rgb(255, 255, 255);
+    --dark-bg-color: rgb(30, 30, 30);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: var(--light-color);
+    background-color: var(--light-bg-color);
+
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--dark-color);
+        background-color: var(--dark-bg-color);
+    }
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:where(h1, h2, h3, h4) {
+    font-family: 'Dela Gothic One', sans-serif;
+}
